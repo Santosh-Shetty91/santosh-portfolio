@@ -1,0 +1,29 @@
+:root{
+  --blue:#0b4f82;
+  --light:#f6f9fb;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, Arial, sans-serif; margin:0; background:var(--light); color:#16324f; line-height:1.6}
+.banner{width:100%; height:240px; object-fit:cover; display:block}
+.hero{position:relative; margin-bottom:20px}
+.hero-content{position:absolute; left:30px; bottom:30px; color:white; text-shadow:0 2px 6px rgba(0,0,0,0.35)}
+.hero-content h1{margin:0; font-size:36px}
+.hero-content .subtitle{margin-top:6px; font-size:16px}
+.container{max-width:980px; margin:0 auto; padding:24px}
+.card{background:var(--card); padding:20px; border-radius:10px; box-shadow:0 6px 18px rgba(10,30,50,0.06); margin-bottom:18px}
+h2{margin-top:0; color:var(--blue)}
+.highlights{list-style:disc; margin-left:20px}
+.timeline .item{margin-bottom:12px}
+.date{display:block; color:#666; font-size:13px; margin-bottom:6px}
+.skills-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px}
+.skills-grid div{background:#f1f6fb; padding:10px; border-radius:6px; text-align:center; font-weight:600}
+.project-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px}
+.project{padding:12px; border-radius:8px; background:#fafbfc; border:1px solid #eef3f8}
+.proj-thumb{background:#e6eef7; height:120px; border-radius:6px; display:flex; align-items:center; justify-content:center; color:#0b4f82; font-weight:700}
+.footer{padding:18px; text-align:center; color:#55707f; font-size:14px}
+.btn{display:inline-block; background:var(--blue); color:white; padding:10px 14px; border-radius:8px; text-decoration:none; font-weight:600; margin:4px}
+@media(max-width:600px){
+  .hero-content h1{font-size:22px}
+  .banner{height:160px}
+}
